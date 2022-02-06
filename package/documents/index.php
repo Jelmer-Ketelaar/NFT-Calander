@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('include/header.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Neftify - NFT Marketplace Bootstrap 5 HTML Template</title>
-    <meta content="Neftify is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc."
-          name="description">
-
-
-    <!-- Favicon icon -->
-    <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/banner.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-          integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
-
-
-</head>
-
-<body class="@@dashboard">
-
-
-<div class="front" id="main-wrapper">
-
-    <?php include('include/header.php') ?>
-
-    <div class="intro1 section-padding">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xl-5 col-lg-6 col-12">
-                    <div class="intro-content  my-5">
-                        <h1 class="mb-3">Discover<span> extraordinary NFTs</span></h1>
-                        <div class="intro-btn mt-5">
-                            <a class="btn btn-outline-primary" href="upload.php">Create</a>
-                        </div>
+<div class="intro1 section-padding">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-5 col-lg-6 col-12">
+                <div class="intro-content  my-5">
+                    <h1 class="mb-3">Discover<span> extraordinary NFTs</span></h1>
+                    <div class="intro-btn mt-5">
+                        <a class="btn btn-outline-primary" href="upload.php">Create</a>
+                    </div>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-12">
@@ -231,7 +204,7 @@
                         <div class="create-sell-content-icon"><i class="bi bi-shield-check"></i></div>
                         <div>
                             <h4>Projects/Drops </h4>
-                            <p>Every project/drop that is listed on <strong>WWWW</strong> is verified and a
+                            <p>Every project/drop that is listed on <strong>NFTDropCalender</strong> is verified and a
                                 legit project, we check everything before we list the project.</p>
                         </div>
                     </div>
@@ -241,7 +214,8 @@
                         <div class="create-sell-content-icon"><i class="fas fa-info-circle"></i></div>
                         <div>
                             <h4>Information</h4>
-                            <p>On <strong>WWWW</strong> you can find all the information that you need to know
+                            <p>On <strong>NFTDropCalender</strong> you can find all the information that you need to
+                                know
                                 about a project, best snipe tool for NFT projects/drops!</p>
                         </div>
                     </div>
@@ -261,7 +235,8 @@
                         <div class="create-sell-content-icon"><i class="bi bi-circle-half"></i></div>
                         <div>
                             <h4>Free to use</h4>
-                            <p><strong>WWWW</strong> is completely free for the users of this platform, there is no
+                            <p><strong>NFTDropCalender</strong> is completely free for the users of this platform, there
+                                is no
                                 catch at all. <br> You only have to pay for listing your project/drop to our page </p>
                         </div>
                     </div>
@@ -271,7 +246,7 @@
     </div>
 
 
-    <?php include 'include/footer.php'?>
+<?php include 'include/footer.php'?>
 
 
 </div>

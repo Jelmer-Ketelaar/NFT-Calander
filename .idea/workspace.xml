@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f31d65-51d3-4478-951e-9b43ddfcbe2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/documents/include/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/documents/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/contactMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/contactMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/drop.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/listDrop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/explore.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/explore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/include/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/item.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/listProject.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

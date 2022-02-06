@@ -16268,3 +16268,7 @@ button:hover, button:focus, button:active,
 #drop-list {
     left: 10vw !important;
 }
+
+.logo {
+    height: 20px;
+}

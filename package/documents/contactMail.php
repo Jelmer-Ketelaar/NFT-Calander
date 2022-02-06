@@ -1,6 +1,6 @@
 <?php
 
-$to = 'info@nftgenie.pro';
+$to = 'info@nftdropcalender.nl';
 $subject = $_POST['subject'];
 $message = $_POST['message'].' Name: '.$_POST['name'];
 $headers = "From: ".$_POST['email'];

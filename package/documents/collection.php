@@ -1,35 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('include/header.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Neftify - NFT Marketplace Bootstrap 5 HTML Template</title>
-    <meta content="Neftify is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc."
-          name="description">
-
-
-    <!-- Favicon icon -->
-    <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="./css/style.css" rel="stylesheet">
-</head>
-
-<body class="@@dashboard">
-
-<div class="front" id="main-wrapper">
-
-    <?php include('include/header.php') ?>
-
-    <div class="collections section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="filter-tab">
-                        <div class="filter-nav mb-4"><a class="active">All</a><a>Games</a><a>Artwork</a></div>
-                        <div class="row">
-                            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <div class="card items">
+<div class="collections section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="filter-tab">
+                    <div class="filter-nav mb-4"><a class="active">All</a><a>Games</a><a>Artwork</a></div>
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card items">
                                     <div class="card-body">
                                         <div class="items-img position-relative"><img alt=""
                                                                                       class="img-fluid rounded mb-3"

@@ -1,3 +1,6 @@
+const log4 = document.getElementById('projectImage');
+
+
 "use strict";
 
 
@@ -214,6 +217,14 @@ jQuery(document).ready(function () {
 
 
 });
+
+const loadFile = function (event) {
+    log4.src = URL.createObjectURL(event.target.files[0]);
+    document.getElementById('bannerLabel').innerHTML = inputName.value + ' image uploaded';
+    log4.onload = function () {
+        URL.revokeObjectURL(log4.src) // free memory
+    }
+};
 
 
 (function () {

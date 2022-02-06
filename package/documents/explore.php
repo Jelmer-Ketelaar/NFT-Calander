@@ -1,35 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('include/header.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Neftify - NFT Marketplace Bootstrap 5 HTML Template</title>
-    <meta content="Neftify is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc."
-          name="description">
-
-
-    <!-- Favicon icon -->
-    <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="./css/style.css" rel="stylesheet">
-</head>
-
-<body class="@@dashboard">
-
-<div class="front" id="main-wrapper">
-
-    <?php include('include/header.php') ?>
-
-    <div class="page-title">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-6">
-                    <div class="page-title-content">
-                        <h3>Explore</h3>
-                        <p class="mb-2">Here you can Explore some NFTs</p>
-                    </div>
+<div class="page-title">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-6">
+                <div class="page-title-content">
+                    <h3>Explore</h3>
+                    <p class="mb-2">Here you can Explore some NFTs</p>
                 </div>
+            </div>
             </div>
         </div>
     </div>

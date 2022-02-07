@@ -16272,3 +16272,49 @@ button:hover, button:focus, button:active,
 .logo {
     height: 20px;
 }
+
+.card .image-over .author {
+    display: block;
+    position: absolute;
+    top: calc(100% - 2.5rem);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.avatar-lg {
+    height: 5rem;
+    width: 5rem;
+}
+
+.card .image-over .author .author-thumb img {
+    height: calc(5rem - 16px);
+    width: calc(5rem - 16px);
+    margin: 5px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+
+
+.card .image-over .author .author-thumb::after {
+    content: "";
+    top: 5px;
+    width: calc(5rem - 16px);
+    height: calc(5rem - 16px);
+    background-color: rgba(9, 8, 13, 0.15);
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+ .card .image-over .author .author-thumb::before, .card .image-over .author .author-thumb::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}

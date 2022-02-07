@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-12">
-                    <a href="item.php">
+                    <a href="nft.php">
                         <div class="intro-slider">
                             <div class="slider-item"><img alt="" class="img-fluid" src="./images/items/9.jpg">
                                 <div class="slider-item-avatar">

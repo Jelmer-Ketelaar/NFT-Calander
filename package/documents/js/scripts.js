@@ -32,7 +32,7 @@ function updateValue3(e) {
 
     const newBlockchainSelect = blockchainLogo.value;
 
-    if(newBlockchainSelect === 'solana'){
+    if (newBlockchainSelect === 'solana') {
         document.getElementById('promotePrice').textContent = ' 2.62SOL';
         document.getElementById('normalPromoPrice').textContent = ' 2.36SOL';
         document.getElementById('listingPrice').textContent = ' 0.09SOL';
@@ -42,18 +42,18 @@ function updateValue3(e) {
         document.getElementById('listingPrice').textContent = ' 0.004ETH';
     }
 
-    log3.src = 'images/extern_logo/crypto/'+newBlockchainSelect+'.png';
+    log3.src = 'images/extern_logo/crypto/' + newBlockchainSelect + '.png';
 
-    if(newBlockchainSelect === 'ethereum'){
+    if (newBlockchainSelect === 'ethereum') {
         document.getElementById('volumeTxt').placeholder = 'Volume traded (ETH)';
     }
-    if(newBlockchainSelect === 'solana'){
+    if (newBlockchainSelect === 'solana') {
         document.getElementById('volumeTxt').placeholder = 'Volume traded (SOL)';
     }
-    if(newBlockchainSelect === 'polygon'){
+    if (newBlockchainSelect === 'polygon') {
         document.getElementById('volumeTxt').placeholder = 'Volume traded (MATIC)';
     }
-    if(newBlockchainSelect === 'cardano'){
+    if (newBlockchainSelect === 'cardano') {
         document.getElementById('volumeTxt').placeholder = 'Volume traded (ADA)';
     }
 
@@ -70,10 +70,10 @@ const loadFile = function (event) {
 function updateValue4(e) {
     document.getElementById('socialBtn').style.display = 'block';
     document.getElementById('twitterLogo').style.visibility = 'visible';
-    if(e.target.value === ''){
+    if (e.target.value === '') {
         document.getElementById('twitterLogo').style.visibility = 'hidden';
     }
-    if(e.target.value === '' && log6 === ''){
+    if (e.target.value === '' && log6 === '') {
         document.getElementById('socialBtn').style.display = 'none';
     }
     log5.textContent = e.target.value;
@@ -82,13 +82,13 @@ function updateValue4(e) {
 function updateValue5(e) {
     document.getElementById('socialBtn').style.display = 'block';
     document.getElementById('discordLogo').style.visibility = 'visible';
-    if(e.target.value === ''){
+    if (e.target.value === '') {
         document.getElementById('discordLogo').style.visibility = 'hidden';
         log6.textContent = '';
     } else {
         log6.textContent = log.textContent;
     }
-    if(e.target.value === '' && log5 === ''){
+    if (e.target.value === '' && log5 === '') {
         document.getElementById('socialBtn').style.display = 'none';
     }
 }
@@ -96,28 +96,25 @@ function updateValue5(e) {
 function updateValue6(e) {
     document.getElementById('socialBtn').style.display = 'block';
     document.getElementById('websiteLogo').style.visibility = 'visible';
-    if(e.target.value === ''){
+    if (e.target.value === '') {
         document.getElementById('websiteLogo').style.visibility = 'hidden';
         log7.textContent = '';
     }
-    if(e.target.value === '' && log5 === '' && log6){
+    if (e.target.value === '' && log5 === '' && log6) {
         document.getElementById('socialBtn').style.display = 'none';
     }
 
     log7.textContent = e.target.value;
 
-    if (log7.textContent.indexOf('https://') > -1)
-    {
+    if (log7.textContent.indexOf('https://') > -1) {
         log7.textContent = e.target.value.replace("https://", "");
     }
-    if (log7.textContent.indexOf('https://') > -1)
-    {
+    if (log7.textContent.indexOf('https://') > -1) {
         log7.textContent = e.target.value.replace("https://", "");
     }
 
 
 }
-
 
 
 "use strict";
@@ -333,10 +330,7 @@ jQuery(document).ready(function () {
         }
 
     });
-
-
 });
-
 
 
 (function () {

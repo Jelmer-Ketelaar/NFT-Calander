@@ -27,7 +27,7 @@
                     <div class="navigation">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="brand-logo">
-                                <a href="../index.php">
+                                <a href="index.php">
                                     <img src="icons/logo.png" alt="" class="logo" style="height:40px">
                                     NFTDropCalender
                                 </a>
@@ -42,7 +42,8 @@
                                 <ul class="navbar-nav me-auto">
                                     <li class="nav-item dropdown"><a class="nav-link" href="index.php">Home</a>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="explore.php">Explore</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="exploreDrop.php">Drops </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="exploreProject.php">Projects</a></li>
                                     <li class="nav-item"><a class="nav-link" href="collection.php">Drops</a>
                                 </ul>
                             </div>

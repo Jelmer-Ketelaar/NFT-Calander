@@ -20,20 +20,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xxl-6 col-xl-6 col-lg-6">
-                <h4 class="card-title mb-3">List Project</h4>
+                <h4 class="card-title mb-3">NFT Project</h4>
                 <div class="card">
                     <div class="card-body">
                         <form action="#">
                             <div class="row">
-                                <div class="col-xxl-12">
-                                    <div class="d-flex align-items-center mb-3"><img
-                                                alt="" class="me-3 rounded-circle me-0 me-sm-3"
-                                                height="55" src="images/items/1.jpg" width="55">
-                                        <div class="media-body">
-                                            <h5 class="mb-0">Max file size is 20mb</h5>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="col-12 mb-3">
                                     <label class="form-label">Project Name</label><input class="form-control"
                                                                                          name="itemName"
@@ -86,8 +77,8 @@
                     <div class="card-body">
                         <div class="items-img position-relative">
                             <img alt="" class="img-fluid rounded mb-3"
-                                 src="" id="projectImage"></div>
-                        <h4 class="card-title">Liguid Wave</h4>
+                                 src="images/items/1.jpg" id="projectImage"></div>
+                        <h4 class="card-title" id="projectName">Liguid Wave</h4>
                         <p></p>
                         <div class="d-flex justify-content-between">
                             <div class="text-start">

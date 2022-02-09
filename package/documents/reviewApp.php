@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if (isset($_GET['ww']) && $_GET['ww'] === 'Youtube022002!') {
+if (isset($_GET['ww']) && $_GET['ww'] === 'Test') {
     $getProjects = $conn->query("SELECT * FROM projects WHERE verified = 'false'");
     $projects = $getProjects->fetchAll(\PDO::FETCH_ASSOC);
 
@@ -16,12 +16,12 @@ if (isset($_GET['ww']) && $_GET['ww'] === 'Youtube022002!') {
 
 
 ?>
-<html>
+<html lang="en">
 <head>
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
-    <title>NFTGenie</title>
-    <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
+    <title>NFTDropCalendar</title>
+    <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -76,7 +76,7 @@ if (isset($_GET['ww']) && $_GET['ww'] === 'Youtube022002!') {
                                             </div>
                                         </a>
                                         <div class="col-12 col-md-12 col-lg-12">
-                                            <form action='reviewAppProc.php' methode='get'>
+                                            <form action='reviewAppProc.php' method='get'>
                                                 <input type='hidden'
                                                        value='<?php echo base64_encode($project['id']); ?>' name='id'>
                                                 <input type='hidden' value='<?php echo $project['emailContact']; ?>'
@@ -117,10 +117,6 @@ if (isset($_GET['ww']) && $_GET['ww'] === 'Youtube022002!') {
                                                         <label>Mint price:</label>
                                                         <input type='text' value='<?php echo $project['mintPrice']; ?>'
                                                                name='mintPrice'>
-                                                    </div>
-                                                    <div class='col-2'>
-                                                        <label>Hyped number:</label>
-                                                        <input type='text' value='' name='hypedNumber' required>
                                                     </div>
                                                     <div class='col-2'>
                                                         <button type='submit'

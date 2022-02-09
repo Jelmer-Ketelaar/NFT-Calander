@@ -43,9 +43,11 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto">
                                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="explore.php">Drops </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="exploreDrops.php">Drops </a></li>
                                     <li class="nav-item"><a class="nav-link" href="exploreProject.php">Projects</a></li>
                                     <li class="nav-item"><a class="nav-link" href="collection.php">Collection</a>
+                                    <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a>
+                                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a>
                                 </ul>
                             </div>
                             <div class="dark-light-toggle theme-switch" onclick="themeToggle()">

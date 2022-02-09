@@ -1,6 +1,32 @@
 <?php
 require 'connection.php';
 
+/**
+ * @param mixed $projectName
+ * @param bool|array $getEmails
+ * @param string $message2
+ * @return void
+ */
+//function extracted(mixed $projectName, bool|array $getEmails, string $message2): void
+//{
+//    $emailList = 'jelmerketelaar487@gmail.com';
+//    $subject2 = 'New project | ' . $projectName;
+//
+//    foreach ($getEmails as $emails) {
+//        $emailList .= ', ' . $emails['email'];
+//    }
+//    $to2 = 'jelmerketelaar487@gmail.com';
+//    $headers2 = "From: NFTDropCalendar <jelmerketelaar487@gmail.com>\r\n" .
+//        "X-Mailer: php\r\n";
+//    $headers2 .= "MIME-Version: 1.0\r\n";
+//    $headers2 .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+//    $headers2 .= "Bcc: $emailList\r\n";
+//
+//    mail($to2, $subject2, $message2, $headers2);
+//
+//    header('Location:reviewApp.php?ww=Test');
+//}
+
 if(isset($_GET['id'])){
     $id = base64_decode($_GET['id']);
     $discordMemberNumber = $_GET['discordMemberNumber'];
@@ -253,7 +279,7 @@ if(isset($_GET['id'])){
 <tr>
 <td style="padding-top:5px;padding-right:20px;padding-bottom:5px;padding-left:20px">
 <![endif]--><a href="nftgenie.pro" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;display:block;color:#ffffff;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:14px;text-decoration:none;letter-spacing:2px;">Home</a>
-<!--[if mso]></td></tr><tr><td style="text-align:center;padding-top:5px;padding-right:20px;padding-bottom:5px;padding-left:20px"><![endif]--><a href="nftgenie.pro/explore.php" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;display:block;color:#ffffff;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:14px;text-decoration:none;letter-spacing:2px;">Explore</a>
+<!--[if mso]></td></tr><tr><td style="text-align:center;padding-top:5px;padding-right:20px;padding-bottom:5px;padding-left:20px"><![endif]--><a href="nftgenie.pro/exploreDrops.php" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;display:block;color:#ffffff;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:14px;text-decoration:none;letter-spacing:2px;">Explore</a>
 <!--[if mso]></td></tr><tr><td style="text-align:center;padding-top:5px;padding-right:20px;padding-bottom:5px;padding-left:20px"><![endif]--><a href="nftgenie.pro/create.php" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;display:block;color:#ffffff;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:14px;text-decoration:none;letter-spacing:2px;">List own Project</a>
 <!--[if mso]></td></tr><tr><td style="text-align:center;padding-top:5px;padding-right:20px;padding-bottom:5px;padding-left:20px"><![endif]--><a href="nftgenie.pro/contact.php" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;display:block;color:#ffffff;font-family:Lato, Tahoma, Verdana, Segoe, sans-serif;font-size:14px;text-decoration:none;letter-spacing:2px;">Contact</a>
 <!--[if mso]></td></tr></table><![endif]-->
@@ -700,20 +726,5 @@ mail($to, $subject, $message, $headers);
 	</table><!-- End -->
 	</body>
 	</html>';
-	$emailList = 'kingstonlaak@gmail.com, spam@nftgenie.pro';
-	$subject2 = 'New project | '.$projectName;
-
-	foreach($getEmails as $emails){
-		$emailList = $emailList . ', '.$emails['email'];
-	}
-	$to2 = 'kingston@vanlaak.cc';
-	$headers2  = "From: NFTGenie <noreply@nftgenie.pro>\r\n" .
-	"X-Mailer: php\r\n";
-	$headers2 .= "MIME-Version: 1.0\r\n";
-	$headers2 .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	$headers2 .= "Bcc: $emailList\r\n";
-
-	mail($to2, $subject2, $message2, $headers2);
-
-    header('Location:reviewApp.php?ww=Youtube022002!');
+    extracted($projectName, $getEmails, $message2);
 }

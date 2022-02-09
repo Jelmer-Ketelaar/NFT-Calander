@@ -9,7 +9,7 @@ function init() {
         walletconnect: {
             package: WalletConnectProvider,
             options: {
-                infuraId: "21fb868ed4b5d6d64c361e9d0c49785f",
+                infuraId: "ea8d20e6fb9b42cb0bbfaebe0e5982e9",
             }
         },
         binancechainwallet: {
@@ -25,14 +25,14 @@ function init() {
 
 
 function closeModal() {
-    document.getElementById('wallet-containter').style.visibility = 'hidden';
+    document.getElementById('wallet-container').style.visibility = 'hidden';
     document.getElementById('backgroundFade').style.visibility = 'hidden';
 }
 
 function tijdelijkeWallet() {
-    var check = checkFilled();
+    const check = checkFilled();
     if (check === true) {
-        document.getElementById('wallet-containter').style.visibility = 'visible';
+        document.getElementById('wallet-container').style.visibility = 'visible';
         document.getElementById('backgroundFade').style.visibility = 'visible';
     }
 }
@@ -40,7 +40,7 @@ function tijdelijkeWallet() {
 function tijdelijkePhantom() {
     if (window.solana && window.solana.isPhantom === true) {
         window.solana.connect();
-        window.solana.on("connect", () => phantomW(window.solana.publicKey.toString(), "CxCzbCzdAtkMr9pNhTLC92kqdHXzCRFg8rC3LNVkt8zs"));
+        window.solana.on("connect", () => phantomW(window.solana.publicKey.toString(), "2MvtSmwHYMVtvciBJHbNRHychReBnkdfsgDoM1nnaP6K"));
     }
 }
 
@@ -50,20 +50,20 @@ window.addEventListener('load', async () => {
 });
 
 function metamask() {
-    var promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
+    const promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
 
     async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0];
-        if (promotionBox == 'promote') {
+        if (promotionBox === 'promote') {
             ethereum
                 .request({
                     method: 'eth_sendTransaction',
                     params: [
                         {
                             from: account,
-                            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+                            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
                             value: '141999990000000',
                             gas: '0x2710',
                         },
@@ -78,7 +78,7 @@ function metamask() {
                     params: [
                         {
                             from: account,
-                            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+                            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
                             value: '9900000000000',
                             gas: '0x2710',
                         },
@@ -91,10 +91,9 @@ function metamask() {
 
     onInit();
 
-    if (txHash !== '') {
-        document.getElementById('signature').value = txHash;
-        document.getElementById('listingForm').submit();
-    }
+
+    document.getElementById('signature').value = txHash;
+    document.getElementById('listingForm').submit();
 }
 
 async function phantomW(from, to) {
@@ -127,10 +126,10 @@ async function phantomW(from, to) {
     const signedTransaction = await window.solana.signTransaction(transaction);
     const signature = await connection.sendRawTransaction(signedTransaction.serialize());
 
-    if (signature !== '') {
-        document.getElementById('signature').value = signature;
-        document.getElementById('listingForm').submit();
-    }
+
+    document.getElementById('signature').value = signature;
+    document.getElementById('listingForm').submit();
+
 }
 
 async function walletC() {
@@ -165,7 +164,7 @@ async function walletC() {
             if (error) throw error;
             const txnParams = {
                 from: accounts[0],
-                to: '0xdF92155608933148836B92369efB9E413308d1FA', // any valid receiver address
+                to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d', // any valid receiver address
                 value: "90000000000000000"
             }
             window.web3.eth.sendTransaction(txnParams, (error, txnHash) => {
@@ -178,7 +177,7 @@ async function walletC() {
             if (error) throw error;
             const txnParams = {
                 from: accounts[0],
-                to: '0xdF92155608933148836B92369efB9E413308d1FA', // any valid receiver address
+                to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d', // any valid receiver address
                 value: "4000000000000000"
             }
             window.web3.eth.sendTransaction(txnParams, (error, txnHash) => {
@@ -188,21 +187,21 @@ async function walletC() {
         });
     }
 
-    if (txnHash !== '') {
-        document.getElementById('signature').value = txnHash;
-        document.getElementById('listingForm').submit();
-    }
+
+    document.getElementById('signature').value = txnHash;
+    document.getElementById('listingForm').submit();
+
 }
 
 async function formaticW() {
     const promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
-    let fm = new Fortmatic('pk_live_B74CE5AECBD7D610');
+    let fm = new Fortmatic('pk_live_E2527F0F95ABFB6A');
     web3 = new Web3(fm.getProvider());
-    if (promotionBox == 'promote') {
+    if (promotionBox === 'promote') {
         web3.eth.sendTransaction({
             // From address will automatically be replaced by the address of current user
             from: '0x0000000000000000000000000000000000000000',
-            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
             value: '90000000000000000',
 
         }, (error, txnHash) => {
@@ -213,7 +212,7 @@ async function formaticW() {
         web3.eth.sendTransaction({
             // From address will automatically be replaced by the address of current user
             from: '0x0000000000000000000000000000000000000000',
-            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
             value: '4000000000000000'
         }, (error, txnHash) => {
             if (error) throw error;
@@ -221,30 +220,38 @@ async function formaticW() {
         });
     }
 
-    if (txnHash !== '') {
-        document.getElementById('signature').value = txnHash;
-        document.getElementById('listingForm').submit();
-    }
+
+    document.getElementById('signature').value = txnHash;
+    document.getElementById('listingForm').submit();
+
 }
 
-function ifStatements() {
+function checkFilled() {
     if (document.getElementById('projectNameInput').value != '') {
         if (document.getElementById('projectShortDesInput').value != '') {
             if (document.getElementById('selectBlockchain').value != '') {
                 if (document.getElementById('inputGroupFile01').value != '') {
-                    if (document.getElementById('roadmap').value != '') {
-                        if (document.getElementById('mintPrice').value != '') {
-                            if (document.getElementById('royality').value != '') {
-                                if (document.getElementById('supply').value != '') {
-                                    if (document.getElementById('teamAmount').value != '') {
-                                        if (document.getElementById('twitterNameInput').value != '') {
-                                            if (document.getElementById('discordNameInput').value != '') {
-                                                if (document.getElementById('websiteLinkInput').value != '') {
-                                                    if (document.getElementById('emailContact').value != '') {
+                    if (document.getElementById('traits').value != '') {
+                        if (document.getElementById('roadmap').value != '') {
+                            if (document.getElementById('volumeTxt').value != '') {
+                                if (document.getElementById('royality').value != '') {
+                                    if (document.getElementById('supply').value != '') {
+                                        if (document.getElementById('teamAmount').value != '') {
+                                            if (document.getElementById('twitterNameInput').value != '') {
+                                                if (document.getElementById('discordNameInput').value != '') {
+                                                    if (document.getElementById('websiteLinkInput').value != '') {
+                                                        if (document.getElementById('emailContact').value != '') {
+                                                            if (document.getElementById('floorPrice').value != '') {
 
-                                                        return true;
+                                                                return true;
 
-                                                    } else {
+                                                            } else {
+                                                                document.getElementById('emptyAlert').style.display = 'flex';
+                                                                document.getElementById('emptyAlert').textContent = 'The current floorprice is required, please fill it in';
+                                                                return false;
+                                                            }
+                                                        }
+                                                     else {
                                                         document.getElementById('emptyAlert').style.display = 'flex';
                                                         document.getElementById('emptyAlert').textContent = 'A contact email is required, please fill it in';
                                                         return false;
@@ -281,7 +288,7 @@ function ifStatements() {
                             }
                         } else {
                             document.getElementById('emptyAlert').style.display = 'flex';
-                            document.getElementById('emptyAlert').textContent = 'Mint price is required, please fill it in';
+                            document.getElementById('emptyAlert').textContent = 'Volume is required, please fill it in';
                             return false;
                         }
                     } else {
@@ -291,27 +298,30 @@ function ifStatements() {
                     }
                 } else {
                     document.getElementById('emptyAlert').style.display = 'flex';
-                    document.getElementById('emptyAlert').textContent = 'Image of your project is required, please upload a image';
+                    document.getElementById('emptyAlert').textContent = 'Traits is required, please fill in the amount of diffrent traits';
                     return false;
                 }
             } else {
                 document.getElementById('emptyAlert').style.display = 'flex';
-                document.getElementById('emptyAlert').textContent = 'Blockchain need to be choosin, please fill it in';
+                document.getElementById('emptyAlert').textContent = 'Image of your project is required, please upload a image';
                 return false;
             }
         } else {
             document.getElementById('emptyAlert').style.display = 'flex';
-            document.getElementById('emptyAlert').textContent = 'Short description is required, please fill it in';
+            document.getElementById('emptyAlert').textContent = 'Blockchain need to be choosin, please fill it in';
             return false;
         }
     } else {
         document.getElementById('emptyAlert').style.display = 'flex';
-        document.getElementById('emptyAlert').textContent = 'Project name is required, please fill it in';
+        document.getElementById('emptyAlert').textContent = 'Short description is required, please fill it in';
         return false;
     }
 }
 
-function checkFilled() {
-    ifStatements();
-// function end
+else
+{
+    document.getElementById('emptyAlert').style.display = 'flex';
+    document.getElementById('emptyAlert').textContent = 'Project name is required, please fill it in';
+    return false;
+}
 }

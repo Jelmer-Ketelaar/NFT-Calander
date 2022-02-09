@@ -1,14 +1,14 @@
 <?php
 require 'connection.php';
 
-//$id = base64_decode($_GET['id']);
+$id = base64_decode($_GET['id']);
 
-/*if ( !is_numeric($id) ) {
+if ( !is_numeric($id) ) {
     header('Location:index.php');
-}*/
+}
 
 
-$getProject = $conn->query("SELECT * FROM projects ");
+$getProject = $conn->query("SELECT * FROM projects WHERE id =".$id);
 $count = $getProject->rowCount();
 $project = $getProject->fetch();
 

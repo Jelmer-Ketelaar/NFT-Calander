@@ -30,9 +30,7 @@ $projectsListed = $getProjectLi->fetchAll();
                 <div class="filter-tab">
                     <!--                    <div class="filter-nav mb-4"><a class="active">All</a><a>Games</a><a>Artwork</a></div>-->
                     <div class="row">
-                        <?php foreach ($projects
-
-                                       as $project) { ?>
+                        <?php foreach ($projects as $project) { ?>
                             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="card items">
                                     <div class="card-body">

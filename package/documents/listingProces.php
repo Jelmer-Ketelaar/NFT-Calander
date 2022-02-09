@@ -4,7 +4,14 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if (isset($_POST['projectName'], $_POST['projectDescription'], $_POST['blockchain'], $_POST['dropDate'], $_POST['roadmap'], $_POST['mintPrice'], $_POST['royality'], $_POST['supply'], $_POST['teamAmount'], $_POST['twitterName'], $_POST['discordLink'], $_POST['websiteLink'], $_POST['signature'])) {
+if (isset(
+    $_POST['projectName'],
+    $_POST['projectDescription'], $_POST['blockchain'],
+    $_POST['roadmap'],
+    $_POST['royality'],
+    $_POST['supply'], $_POST['teamAmount'],
+    $_POST['twitterName'], $_POST['discordLink'],
+    $_POST['websiteLink'], $_POST['signature'])) {
 
     // Get all the upload data
     $projectName = $_POST['projectName'];
@@ -13,9 +20,9 @@ if (isset($_POST['projectName'], $_POST['projectDescription'], $_POST['blockchai
     $category = $_POST['inlineRadioOptions'];
     $filename = $_FILES['thumbnail']['name'];
     $filetype = $_FILES['thumbnail']['type'];
-    $dropDate = $_POST['dropDate'];
+//    $dropDate = $_POST['dropDate'];
     $roadmap = $_POST['roadmap'];
-    $mintPrice = $_POST['mintPrice'];
+//    $mintPrice = $_POST['mintPrice'];
     $royality = $_POST['royality'];
     $supply = $_POST['supply'];
     $teamAmount = $_POST['teamAmount'];
@@ -49,13 +56,13 @@ if (isset($_POST['projectName'], $_POST['projectDescription'], $_POST['blockchai
     // Save image in folder
     if ($filetype === 'image/jpeg' || $filetype === 'image/png' || $filetype === 'image/gif' || $filetype === 'image/jpg') {
         $imageCreate = date("Y-m-d-H:i:s");
-        move_uploaded_file($_FILES['thumbnail']['tmp_name'], 'img/' . $imageCreate . '_' . $filename);
-        $filepath = "img/" . $imageCreate . '_' . $filename;
+        move_uploaded_file($_FILES['thumbnail']['tmp_name'], 'images/' . $imageCreate . '_' . $filename);
+        $filepath = "images/" . $imageCreate . '_' . $filename;
     }
 
 
     // insert a single publisher
-    $sql = 'INSERT INTO projects(name, description, blockchain, category, thumbnail, dropDate, roadmap, mintPrice, royality, supply, teamAmount, twitterName, discordLink, websiteLink, emailContact, discordMemberNumber, twitterFollowerNumber, signature, promoted) VALUES(:projectName, :projectDescription, :blockchain, :category, :thumbnail, :dropDate, :roadmap, :mintPrice, :royality, :supply, :teamAmount, :twitterName, :discordLink, :websiteLink, :emailContact, :discordMemberCount, :twitterFollowerCount, :signature, :promoted)';
+    $sql = 'INSERT INTO projects(name, description, blockchain, category, thumbnail, roadmap, royality, supply, teamAmount, twitterName, discordLink, websiteLink, emailContact, discordMemberNumber, twitterFollowerNumber, signature, promoted) VALUES(:projectName, :projectDescription, :blockchain, :category, :thumbnail, :roadmap, :royality, :supply, :teamAmount, :twitterName, :discordLink, :websiteLink, :emailContact, :discordMemberCount, :twitterFollowerCount, :signature, :promoted)';
 
     $statement = $conn->prepare($sql);
 
@@ -65,9 +72,9 @@ if (isset($_POST['projectName'], $_POST['projectDescription'], $_POST['blockchai
         ':blockchain' => $blockchain,
         ':category' => $category,
         ':thumbnail' => $filepath,
-        ':dropDate' => $dropDate,
+//        ':dropDate' => $dropDate,
         ':roadmap' => $roadmap,
-        ':mintPrice' => $mintPrice,
+//        ':mintPrice' => $mintPrice,
         ':royality' => $royality,
         ':supply' => $supply,
         ':teamAmount' => $teamAmount,
@@ -83,15 +90,15 @@ if (isset($_POST['projectName'], $_POST['projectDescription'], $_POST['blockchai
 
     $hashedId = base64_encode($conn->lastInsertId());
 
-    $to = 'info@nftdropcalender.info';
-    $subject = 'New Drop | NFTDropCalender';
-    $message = "Accept it or Decline it! \n https://nftgenie.pro/reviewApp.php?ww=Youtube022002!";
-    $headers = "From: jelmerketelaar487@gmail.nl";
+//    $to = 'jelmerketelaar487@gmail.com';
+//    $subject = 'New Drop | NFTDropCalender';
+//    $message = "Accept it or Decline it! \n http://localhost/NFT-Calander/package/documents/reviewApp.php?ww=Test";
+//    $headers = "From: jelmerketelaar487@gmail.nl";
 
-    mail($to, $subject, $message, $headers);
+//    mail($to, $subject, $message, $headers);
 
     header('Location: nft.php?id=' . $hashedId);
 
 } else {
-    echo 'Contact info@nftdropcalender.info';
+    echo 'Contact jelmerketelaar487@gmail.com';
 }

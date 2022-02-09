@@ -5,7 +5,7 @@ require 'nftGetInfo.php';
 $seoTitle = $project['name'] . ' - NFTDropCalender.info';
 $seoDescription = $project['description'];
 $page = 'explore';
-$titleOg = $project['name'] . ' - NFTDropCalendar.info';
+$titleOg = $project['name'];
 $beschrijving = $project['description'];
 $img = 'http://localhost/NFT-Calander/package/documents/' . $project['thumbnail'];
 require 'include/header.php';
@@ -20,9 +20,9 @@ require 'include/header.php';
                         <div class="row">
                             <div class="col-md-6">
                                 <img alt="..." class="img-fluid rounded"
-                                     src=""<?php echo $project['thumbnail']; ?>"></div>
+                                     src=""<?php echo $titleOg ?>"></div>
                             <div class="col-md-6">
-                                <h3 class="mb-3"><?php echo $titleOg ?></h3>
+                                <h3 class="mb-3"><?php echo $project['name']; ?></h3>
                                 <hr>
                                 <ul class="list-unstyled">
                                     <li class="price d-flex justify-content-between">

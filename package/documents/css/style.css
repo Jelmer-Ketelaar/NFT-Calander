@@ -634,6 +634,8 @@ progress {
     height: auto;
 }
 
+
+
 .img-thumbnail {
     padding: 0.25rem;
     background-color: #fff;
@@ -16295,9 +16297,8 @@ button:hover, button:focus, button:active,
 }
 
 .rounded-circle {
-    border-radius: 50%!important;
+    border-radius: 50% !important;
 }
-
 
 
 .card .image-over .author .author-thumb::after {
@@ -16309,7 +16310,8 @@ button:hover, button:focus, button:active,
     -webkit-box-shadow: 0 0 0 0 transparent;
     box-shadow: 0 0 0 0 transparent;
 }
- .card .image-over .author .author-thumb::before, .card .image-over .author .author-thumb::after {
+
+.card .image-over .author .author-thumb::before, .card .image-over .author .author-thumb::after {
     position: absolute;
     left: 0;
     right: 0;
@@ -16318,7 +16320,6 @@ button:hover, button:focus, button:active,
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
-
 
 
 .mb-2 {
@@ -16337,13 +16338,13 @@ button:hover, button:focus, button:active,
 }
 
 .align-items-center {
-    -ms-flex-align: center!important;
-    align-items: center!important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
 }
 
 .d-flex {
-    display: -ms-flexbox!important;
-    display: flex!important;
+    display: -ms-flexbox !important;
+    display: flex !important;
 }
 
 li {
@@ -16351,4 +16352,28 @@ li {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1.5rem !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.faq-area .card-header .btn {
+    position: relative;
 }

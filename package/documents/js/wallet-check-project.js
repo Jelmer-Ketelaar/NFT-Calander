@@ -1,4 +1,5 @@
 "use strict";
+
 const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
 let web3Modal
@@ -8,7 +9,7 @@ function init() {
         walletconnect: {
             package: WalletConnectProvider,
             options: {
-                infuraId: "21fb868ed4b5d6d64c361e9d0c49785f",
+                infuraId: "ea8d20e6fb9b42cb0bbfaebe0e5982e9",
             }
         },
         binancechainwallet: {
@@ -29,7 +30,7 @@ function closeModal() {
 }
 
 function tijdelijkeWallet() {
-    var check = checkFilled();
+    const check = checkFilled();
     if(check === true) {
         document.getElementById('wallet-containter').style.visibility = 'visible';
         document.getElementById('backgroundFade').style.visibility = 'visible';
@@ -37,9 +38,9 @@ function tijdelijkeWallet() {
 }
 
 function tijdelijkePhantom() {
-    if (window.solana && window.solana.isPhantom == true) {
+    if (window.solana && window.solana.isPhantom === true) {
         window.solana.connect();
-        window.solana.on("connect", () => phantomW(window.solana.publicKey.toString(), "CxCzbCzdAtkMr9pNhTLC92kqdHXzCRFg8rC3LNVkt8zs"));
+        window.solana.on("connect", () => phantomW(window.solana.publicKey.toString(), "2MvtSmwHYMVtvciBJHbNRHychReBnkdfsgDoM1nnaP6K"));
     }
 }
 
@@ -49,20 +50,20 @@ window.addEventListener('load', async () => {
 });
 
 function metamask() {
-    var promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
+    const promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
 
     async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0];
-        if (promotionBox == 'promote') {
+        if (promotionBox === 'promote') {
             ethereum
                 .request({
                     method: 'eth_sendTransaction',
                     params: [
                         {
                             from: account,
-                            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+                            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
                             value: '141999990000000',
                             gas: '0x2710',
                         },
@@ -77,7 +78,7 @@ function metamask() {
                     params: [
                         {
                             from: account,
-                            to: '0xdF92155608933148836B92369efB9E413308d1FA',
+                            to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d',
                             value: '9900000000000',
                             gas: '0x2710',
                         },
@@ -89,26 +90,27 @@ function metamask() {
     };
     onInit();
 
-    if (txHash != '') {
+
         document.getElementById('signature').value = txHash;
         document.getElementById('listingForm').submit();
-    }
+
 }
 
 async function phantomW(from, to) {
-    var promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
+    let instruction;
+    const promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
 
     const network = "https://api.mainnet-beta.solana.com";
     const connection = new solanaWeb3.Connection(network);
     const blockhash = (await connection.getRecentBlockhash("finalized")).blockhash;
-    if (promotionBox == 'promote') {
-        var instruction = solanaWeb3.SystemProgram.transfer({
+    if (promotionBox === 'promote') {
+        instruction = solanaWeb3.SystemProgram.transfer({
             fromPubkey: new solanaWeb3.PublicKey(from),
             toPubkey: new solanaWeb3.PublicKey(to),
             lamports: 2360000000
         });
     } else {
-        var instruction = solanaWeb3.SystemProgram.transfer({
+        instruction = solanaWeb3.SystemProgram.transfer({
             fromPubkey: new solanaWeb3.PublicKey(from),
             toPubkey: new solanaWeb3.PublicKey(to),
             lamports: 90000000
@@ -124,14 +126,14 @@ async function phantomW(from, to) {
     const signedTransaction = await window.solana.signTransaction(transaction);
     const signature = await connection.sendRawTransaction(signedTransaction.serialize());
 
-    if (signature != '') {
+    if (signature !== '') {
         document.getElementById('signature').value = signature;
         document.getElementById('listingForm').submit();
     }
 }
 
 async function walletC() {
-    var promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
+    const promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
 
     const torus = new Torus({
         buttonPosition: 'bottom-left', // customize position of torus icon in dapp
@@ -157,12 +159,12 @@ async function walletC() {
     window.web3 = web3
     const address = (await web3.eth.getAccounts())[0];
 
-    if (promotionBox == 'promote') {
+    if (promotionBox === 'promote') {
         window.web3.eth.getAccounts((error, accounts) => {
             if (error) throw error;
             const txnParams = {
                 from: accounts[0],
-                to: '0xdF92155608933148836B92369efB9E413308d1FA', // any valid receiver address
+                to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d', // any valid receiver address
                 value: "90000000000000000"
             }
             window.web3.eth.sendTransaction(txnParams, (error, txnHash) => {
@@ -175,7 +177,7 @@ async function walletC() {
             if (error) throw error;
             const txnParams = {
                 from: accounts[0],
-                to: '0xdF92155608933148836B92369efB9E413308d1FA', // any valid receiver address
+                to: '0x9f6bc4206daa255deaff6FEc395C26B3b8Ee0F8d', // any valid receiver address
                 value: "4000000000000000"
             }
             window.web3.eth.sendTransaction(txnParams, (error, txnHash) => {
@@ -185,17 +187,16 @@ async function walletC() {
         });
     }
 
-    if (txnHash != '') {
+
         document.getElementById('signature').value = txnHash;
         document.getElementById('listingForm').submit();
-    }
 }
 
 async function formaticW() {
     var promotionBox = document.querySelector('input[name="promotionBox"]:checked').value;
-    let fm = new Fortmatic('pk_live_B74CE5AECBD7D610');
+    let fm = new Fortmatic('pk_live_E2527F0F95ABFB6A');
     web3 = new Web3(fm.getProvider());
-    if (promotionBox == 'promote') {
+    if (promotionBox === 'promote') {
         web3.eth.sendTransaction({
             // From address will automatically be replaced by the address of current user
             from: '0x0000000000000000000000000000000000000000',
@@ -218,17 +219,17 @@ async function formaticW() {
         });
     }
 
-    if (txnHash != '') {
+
         document.getElementById('signature').value = txnHash;
         document.getElementById('listingForm').submit();
-    }
+
 }
 
 
 function checkFilled() {
     if(document.getElementById('projectNameInput').value != ''){
         if(document.getElementById('projectShortDesInput').value != ''){
-            if(document.getElementById('selectBlockchain').value != ''){
+            if(document.getElementById('selectBlockchain').value !=''){
                 if(document.getElementById('inputGroupFile01').value != ''){
                     if(document.getElementById('traits').value != ''){
                         if(document.getElementById('roadmap').value != ''){

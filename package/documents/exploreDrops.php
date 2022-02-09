@@ -1,7 +1,6 @@
 <?php
-require 'nftGetInfo.php';
-$seoTitle = 'NFTDropCalender: Explore all NFTs Drops';
-$seoDescription = 'Explore the verified NFT drops on NFTDropCalender, pro view of NFTs about to drop! ✓ All-in-one NFT Tool ✓ Growing NFT Tool 2022';
+$seoTitle = 'NFTDropCalender: Check out all the NFT Drops';
+$seoDescription = 'Explore the verified NFT drops on NFTDropCalender, a view of NFTs about to drop! ✓ All-in-one NFT Tool ✓ Growing NFT Tool 2022';
 $page = 'explore';
 require 'connection.php';
 require 'include/header.php';
@@ -9,7 +8,7 @@ require 'include/header.php';
 $getProjects = $conn->query("SELECT * FROM projects WHERE verified = 'true' ORDER BY dropDate");
 $projects = $getProjects->fetchAll(\PDO::FETCH_ASSOC);
 
-if (isset($_GET['blockchain']) && $_GET['blockchain'] != '') {
+if (isset($_GET['blockchain']) && $_GET['blockchain'] !== '') {
     $blockchain = $_GET['blockchain'];
     $getProjects = $conn->query("SELECT * FROM projects WHERE verified = 'true' AND promoted = 'promote' OR promoted = 'promote1' OR promoted = 'promote2' OR promoted = 'promote3' AND blockchain = '" . $blockchain . "'");
     $projects = $getProjects->fetchAll(\PDO::FETCH_ASSOC);
@@ -26,57 +25,21 @@ $getProjectLi->execute();
 $projectsListed = $getProjectLi->fetchAll();
 
 ?>
-
+<!--    <div class="section-padding">-->
     <!-- ***** Explore Area Start ***** -->
     <section class="explore-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-7">
+                    <br>
                     <!-- Intro -->
                     <div class="intro text-center mb-4">
-
+                        <h4>Collection</h4>
+                        <p>Check the collection of the listed drops</p>
                     </div>
                 </div>
             </div>
-            <div class="section-padding">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Activity Content -->
-                    <div class="activity-content mt-5 mt-lg-0">
-                        <!-- Single Widget -->
-                        <div class="single-widget">
-                            <!-- Filter Widget -->
-                            <div class="widget filter-widget">
-                                <h4 class="title">Blockchain Filter</h4>
-                                <!-- Filter Widget Content -->
-                                <div class="widget-content">
-                                    <!-- Tags Widget Items -->
-                                    <div class="widget-content filter-widget-items mt-3">
-                                        <a href="<?php if ($blockchain === 'ethereum') { ?>?blockchain=<?php } else { ?>?blockchain=ethereum<?php } ?>"
 
-                                           <?php if ($blockchain === 'ethereum'){ ?>style='border-color:white;color:white!important;'<?php } ?>><img
-                                                    src='img/extern_logo/crypto/ethereum.png' style='width:30px;'>
-                                            Ethereum</a>
-                                        <a href="<?php if ($blockchain === 'solana') { ?>?blockchain=<?php } else { ?>?blockchain=solana<?php } ?>"
-
-                                           <?php if ($blockchain === 'solana'){ ?>style='border-color:white;color:white!important;'<?php } ?>><img
-                                                    src='img/extern_logo/crypto/solana.png' style='width:30px;'> Solana</a>
-                                        <a href="<?php if ($blockchain === 'polygon') { ?>?blockchain=<?php } else { ?>?blockchain=polygon<?php } ?>"
-
-                                           <?php if ($blockchain === 'polygon'){ ?>style='border-color:white;color:white!important;'<?php } ?>><img
-                                                    src='img/extern_logo/crypto/polygon.png' style='width:30px;'>
-                                            Polygon</a>
-                                        <a href="<?php if ($blockchain === 'cardano') { ?>?blockchain=<?php } else { ?>?blockchain=cardano<?php } ?>"
-
-                                           <?php if ($blockchain === 'cardano'){ ?>style='border-color:white;color:white!important;'<?php } ?>><img
-                                                    src='img/extern_logo/crypto/cardano.png' style='width:30px;'>
-                                            Cardano</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row items explore-items">
 
                 <?php foreach ($projects as $project) { ?>
@@ -116,7 +79,7 @@ $projectsListed = $getProjectLi->fetchAll();
                                             <div class="card-bottom d-flex justify-content-between">
                                                 <span><img src='img/extern_logo/twitter_logo.png'
                                                            style='width:40px;'> <?php echo $project['twitterFollowerNumber']; ?></span>
-                                                <span><img src='images/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
+                                                <span><img src='img/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
                                                            style='width:30px;'></span>
                                                 <span><img src='img/extern_logo/discord_logo.png'
                                                            style='width:35px;'> <?php echo $project['discordMemberNumber']; ?></span>
@@ -161,7 +124,7 @@ $projectsListed = $getProjectLi->fetchAll();
                                             <div class="card-bottom d-flex justify-content-between">
                                                 <span><img src='img/extern_logo/twitter_logo.png'
                                                            style='width:40px;'> <?php echo $project['twitterFollowerNumber']; ?></span>
-                                                <span><img src='images/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
+                                                <span><img src='img/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
                                                            style='width:30px;'></span>
                                                 <span><img src='img/extern_logo/discord_logo.png'
                                                            style='width:35px;'> <?php echo $project['discordMemberNumber']; ?></span>
@@ -174,7 +137,7 @@ $projectsListed = $getProjectLi->fetchAll();
                     <?php } ?>
                     <?php if ($project['blockchain'] === 'polygon') { ?>
                         <div class="col-12 col-sm-3 item explore-item" data-groups='["polygon"]'
-                             style='margin-top:0px;'>
+                             style='margin-top:0;'>
 
                             <!-- Single Slide -->
                             <div class="swiper-slide item">
@@ -183,7 +146,7 @@ $projectsListed = $getProjectLi->fetchAll();
 
                                         <img class="card-img-top lazy" loading="lazy"
                                              src="<?php echo $project['thumbnail'] ?>" alt="">
-                                        </a>
+
                                     </div>
                                     <!-- Card Caption -->
                                     <div class="card-caption col-12 p-0">
@@ -208,7 +171,7 @@ $projectsListed = $getProjectLi->fetchAll();
                                             <div class="card-bottom d-flex justify-content-between">
                                                 <span><img src='img/extern_logo/twitter_logo.png'
                                                            style='width:40px;'> <?php echo $project['twitterFollowerNumber']; ?></span>
-                                                <span><img src='images/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
+                                                <span><img src='img/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
                                                            style='width:30px;'></span>
                                                 <span><img src='img/extern_logo/discord_logo.png'
                                                            style='width:35px;'> <?php echo $project['discordMemberNumber']; ?></span>
@@ -254,7 +217,7 @@ $projectsListed = $getProjectLi->fetchAll();
                                             <div class="card-bottom d-flex justify-content-between">
                                                 <span><img src='img/extern_logo/twitter_logo.png'
                                                            style='width:40px;'> <?php echo $project['twitterFollowerNumber']; ?></span>
-                                                <span><img src='images/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
+                                                <span><img src='img/extern_logo/crypto/<?php echo $project['blockchain']; ?>.png'
                                                            style='width:30px;'></span>
                                                 <span><img src='img/extern_logo/discord_logo.png'
                                                            style='width:35px;'> <?php echo $project['discordMemberNumber']; ?></span>
@@ -271,6 +234,7 @@ $projectsListed = $getProjectLi->fetchAll();
             </div>
         </div>
     </section>
+<div class="section-padding"></div>
     <!-- ***** Explore Area End ***** -->
     <script src="./js/scripts.js"></script>
 

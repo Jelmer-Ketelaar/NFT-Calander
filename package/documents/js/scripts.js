@@ -17,6 +17,7 @@ inputName.addEventListener('input', updateValue);
 inputShortDes.addEventListener('input', updateValue2);
 blockchainLogo.addEventListener('input', updateValue3);
 twitterNameInput.addEventListener('input', updateValue4);
+twitterNameInput.addEventListener('input', updateValue4);
 discordNameInput.addEventListener('input', updateValue5);
 websiteLinkInput.addEventListener('input', updateValue6);
 
@@ -135,6 +136,8 @@ function themeToggle() {
         localStorage.setItem("theme", "dark-theme");
     }
 }
+
+
 
 
 

@@ -27,7 +27,7 @@ require 'include/header.php'; ?>
                 <h4 class="card-title mb-3">NFT Drop</h4>
                 <div class="card">
                     <div class="card-body">
-                        <form action="listingProjectProces.php" method="POST" enctype="multipart/form-data"
+                        <form action="listingProces.php" method="POST" enctype="multipart/form-data"
                               id="listingForm">
                             <div class="row">
                                 <div class="col-12 mb-3">
@@ -305,6 +305,7 @@ require 'include/header.php'; ?>
                                     List Your Project
                                 </button>
                             </div>
+                            <button type="submit" class="btn btn-primary mr-2 w-100">Submit free</button>
                         </form>
                     </div>
                 </div>
@@ -351,6 +352,49 @@ require 'include/header.php'; ?>
 </div>
 <!--</div>-->
 
+<div id="backgroundFade" onclick="closeModal()"
+     style="visibility:hidden;position:fixed;top:0;z-index:8;width:200vw;height:200vh;background-color:#1f1f1f;opacity:0.5;"></div>
+
+<div id="wallet-container" class="container"
+     style="visibility:hidden;background-color:rgb(39, 49, 56);width:46vw;height:46vh;position:sticky;z-index:9;left:50%;transform: translate(-50%, 0);border-radius:10px;position: fixed; top:25vh;">
+
+    <div class="row">
+        <div class="col-6"
+             style="text-align: center;border: 1px solid grey; border-radius: 10px 0px 0px 0px;cursor: pointer;"
+             onclick="metamask()">
+            <img style="width:25%;padding-bottom:0px;" src="img/extern_logo/metamask_logo.png">
+            <h3 style="line-height: 0;">MetaMask</h3>
+            <p>Connect to your MetaMask Wallet</p>
+            <br>
+        </div>
+        <div class="col-6"
+             style="text-align: center;border: 1px solid grey; border-radius: 0 10px 0 0;cursor: pointer;"
+             onclick="walletC()">
+            <img style="width:25%;" src="img/extern_logo/torus_logo.png">
+            <h3 style="line-height: 0;">Torus</h3>
+            <p style="margin-bottom:5px;">Signup for direct tansaction</p>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6"
+             style="text-align: center;border: 1px solid grey; border-radius: 0px 0px 0px 10px;cursor: pointer;"
+             onclick="tijdelijkePhantom()">
+            <img style="width:25%;padding-bottom:0px;" src="img/extern_logo/phantom_logo.png">
+            <h3 style="line-height: 0;">PhantomWallet</h3>
+            <p>Connect to your Solana Wallet</p>
+            <br>
+        </div>
+        <div class="col-6"
+             style="text-align: center;border: 1px solid grey; border-radius: 0px 0px 10px 0px;cursor: pointer;"
+             onclick="formaticW()">
+            <img style="width:25%;padding-bottom:0px;" src="img/extern_logo/formatic_logo.png">
+            <h3 style="line-height: 0;">Formatic</h3>
+            <p>Connect to your Formatic Wallet</p>
+            <br>
+        </div>
+    </div>
+</div>
 
 <?php include "include/footer.php"; ?>
 
@@ -366,5 +410,4 @@ require 'include/header.php'; ?>
 
 <script src="./js/scripts.js"></script>
 <script src="./js/wallet-check.js"></script>
-<script src="./js/wallet-check-project.js"></script>
 

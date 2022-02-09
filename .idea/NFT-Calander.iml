@@ -10,5 +10,6 @@
     <orderEntry type="library" name="fortmatic" level="application" />
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="widgets" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>

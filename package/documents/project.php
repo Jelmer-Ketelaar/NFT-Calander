@@ -244,7 +244,7 @@ require 'include/header.php';
                             <h3 class="mt-3 mb-0">Random drops</h3>
                         </div>
                         <div class="intro-btn">
-                            <a class="btn content-btn" href="explore.php">View All</a>
+                            <a class="btn content-btn" href="exploreDrops.php">View All</a>
                         </div>
                     </div>
                 </div>

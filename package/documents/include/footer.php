@@ -10,7 +10,7 @@
                 <div class="bottom-widget">
                     <h4 class="widget-title">About us</h4>
                     <ul>
-                        <li><a href="../explore.php">Explore</a></li>
+                        <li><a href="../exploreDrops.php">Explore</a></li>
                         <li><a href="item.html">Item</a></li>
                         <li><a href="./collection.html">Collection</a></li>
                         <li><a href="./connect.html">Connect</a></li>

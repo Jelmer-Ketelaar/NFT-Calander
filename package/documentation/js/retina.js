@@ -5,20 +5,20 @@
  * Released under the MIT license
  *
  * Retina.js is an open source script that makes it easy to serve
- * high-resolution images to devices with retina displays.
+ * high-resolution img to devices with retina displays.
  */
 
 (function () {
     var root = (typeof exports === 'undefined' ? window : exports);
     var config = {
-        // An option to choose a suffix for 2x images
+        // An option to choose a suffix for 2x img
         retinaImageSuffix: '@2x',
 
         // Ensure Content-Type is an image before trying to load @2x image
         // https://github.com/imulus/retinajs/pull/45)
         check_mime_type: true,
 
-        // Resize high-resolution images to original image's pixel dimensions
+        // Resize high-resolution img to original image's pixel dimensions
         // https://github.com/imulus/retinajs/issues/8
         force_original_dimensions: true
     };

@@ -12,6 +12,8 @@
     <!-- Favicon icon -->
     <link href="./icons/favicon.ico" rel="icon" sizes="16x16" type="image/png">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 
 <body class="@@dashboard">
@@ -40,11 +42,10 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto">
-                                    <li class="nav-item dropdown"><a class="nav-link" href="index.php">Home</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="exploreDrop.php">Drops </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="explore.php">Drops </a></li>
                                     <li class="nav-item"><a class="nav-link" href="exploreProject.php">Projects</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="collection.php">Drops</a>
+                                    <li class="nav-item"><a class="nav-link" href="collection.php">Collection</a>
                                 </ul>
                             </div>
                             <div class="dark-light-toggle theme-switch" onclick="themeToggle()">

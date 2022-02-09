@@ -5,18 +5,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f31d65-51d3-4478-951e-9b43ddfcbe2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package/documents/connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/documents/nft.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package/documents/explore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NFT-Calander.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NFT-Calander.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/887455bc-4297-4e93-90f5-7058a76704f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/887455bc-4297-4e93-90f5-7058a76704f4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documentation/js/retina.js" beforeDir="false" afterPath="$PROJECT_DIR$/package/documentation/js/retina.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/documents/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/documents/connect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/documents/explore.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/exploreDrop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/cardano.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/cardano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/created.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/created.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/exploreDrop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/NFT-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/NFT-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/NFT-logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/NFT-logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/avatar/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/avatar/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/bg/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/bg/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/bg/promo.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/bg/promo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/amazon.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/amazon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/american-express.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/american-express.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/ebay.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/ebay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/mastercard.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/mastercard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/payoneer.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/payoneer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/paypal.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/paypal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/cc/visa.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/cc/visa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/404.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/404.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/activity.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/activity.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/api.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/api.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/application.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/application.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/bids.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/bids.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/collected.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/collected.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/collections.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/collections.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/connect.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/connect.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/create-invoice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/create-invoice.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/created.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/created.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/dashboard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/dashboard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/email-verification.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/email-verification.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/email.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/email.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/explore.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/explore.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/followers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/followers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/following.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/following.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/home.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/home.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/intro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/intro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/invoice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/invoice.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/liked.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/liked.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/locked.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/locked.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/log.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/log.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/notification.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/notification.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/onsale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/onsale.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/otp-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/otp-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/otp-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/otp-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/otp1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/otp1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/otp2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/otp2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/page-404.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/page-404.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/payment.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/payment.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/portfolio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/portfolio.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/reset.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/reset.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/saved.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/saved.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/security.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/security.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-activity.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-activity.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-api.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-api.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-application.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-application.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-payment-method.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-payment-method.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings-security.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings-security.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/settings.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/settings.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/signin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/signin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/signup.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/signup.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/demo/wallet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/demo/wallet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/NFT-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/NFT-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/cardano-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/cardano-png.htm" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/cardano-png.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/cardano.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/cardano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/ethereum.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/ethereum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/polygon.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/polygon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/crypto/solana.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/crypto/solana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/discord_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/discord_logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/discord_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/discord_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/discord_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/discord_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/link_icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/link_icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/twitter_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/twitter_logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/twitter_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/twitter_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/extern_logo/twitter_logo_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/extern_logo/twitter_logo_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/full.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/full.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/items/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/items/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/logo-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/logo-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/logoh.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/logoh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/logoi.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/logoi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/logow.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/logow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/profile/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/profile/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/profile/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/profile/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/profile/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/profile/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/profile/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/profile/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/profile/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/profile/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/routing.png" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/routing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/svg/eth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/svg/eth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/wallet/1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/wallet/1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/wallet/2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/wallet/2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/wallet/3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/wallet/3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/images/wallet/4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/img/wallet/4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/include/exploreProject.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package/documents/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/include/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/documents/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/include/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/documents/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/documents/item.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package/documents/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/listDrop.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/listDrop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/listProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/listProject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/nft.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/nft.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/nftGetInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/nftGetInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/vendor/bootstrap/scss/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/vendor/bootstrap/scss/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/documents/vendor/bootstrap/scss/mixins/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/package/documents/vendor/bootstrap/scss/mixins/_image.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +184,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Program Files/httpd.www",
+    "last_opened_file_path": "C:/xampp/htdocs/NFT-Calander/package/documents",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -62,7 +200,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\NFT-Calander\package\documents" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\NFT-Calander\package\documents\js" />
       <recent name="$PROJECT_DIR$/package/documents/" />
     </key>
   </component>
@@ -77,6 +219,8 @@
       <workItem from="1644059045050" duration="1044000" />
       <workItem from="1644189871523" duration="6823000" />
       <workItem from="1644267277992" duration="5928000" />
+      <workItem from="1644335068043" duration="7047000" />
+      <workItem from="1644355373676" duration="8264000" />
     </task>
     <servers />
   </component>

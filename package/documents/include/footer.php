@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
-                <div class="bottom-logo"><img alt="" class="pb-3" src="../images/logoh.png">
+                <div class="bottom-logo"><img alt="" class="pb-3" src="../img/logoh.png">
                     <p>The Best NFT Snipe Tool of 2022! Get information about a Project/Drop in one pro view.</p>
                 </div>
             </div>
@@ -10,7 +10,7 @@
                 <div class="bottom-widget">
                     <h4 class="widget-title">About us</h4>
                     <ul>
-                        <li><a href="../exploreDrop.php">Explore</a></li>
+                        <li><a href="../explore.php">Explore</a></li>
                         <li><a href="item.html">Item</a></li>
                         <li><a href="./collection.html">Collection</a></li>
                         <li><a href="./connect.html">Connect</a></li>
@@ -38,3 +38,5 @@
         </div>
     </div>
 </div>
+
+<script src="./js/scripts.js"></script>

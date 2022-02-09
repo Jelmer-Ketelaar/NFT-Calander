@@ -14,10 +14,10 @@
                 <div class="col-xl-5 col-lg-6 col-12">
                     <a href="nft.php">
                         <div class="intro-slider">
-                            <div class="slider-item"><img alt="" class="img-fluid" src="./images/items/9.jpg">
+                            <div class="slider-item"><img alt="" class="img-fluid" src="img/items/9.jpg">
                                 <div class="slider-item-avatar">
                                     <img
-                                            alt="" src="./images/avatar/1.jpg">
+                                            alt="" src="img/avatar/1.jpg">
                                     <div>
                                         <h5>The Sandbox</h5>
                                         <p>Sound Box</p>
@@ -47,8 +47,9 @@
                 </div>
             </div>
             <div class="row">
+                <?php
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card"><img alt="" class="img-fluid card-img-top" src="./images/items/1.jpg">
+                    <div class="card"><img alt="" class="img-fluid card-img-top" src="img/items/1.jpg">
                         <div class="card-body">
                             <div class="notable-drops-content-img"></div>
                             <h4 class="card-title">Chito x Givenchy</h4>
@@ -59,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card"><img alt="" class="img-fluid card-img-top" src="./images/items/2.jpg">
+                    <div class="card"><img alt="" class="img-fluid card-img-top" src="img/items/2.jpg">
                         <div class="card-body">
                             <div class="notable-drops-content-img"></div>
                             <h4 class="card-title">The Space Cowboys</h4>
@@ -69,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card"><img alt="" class="img-fluid card-img-top" src="./images/items/3.jpg">
+                    <div class="card"><img alt="" class="img-fluid card-img-top" src="img/items/3.jpg">
                         <div class="card-body">
                             <div class="notable-drops-content-img"></div>
                             <h4 class="card-title">Extra Dimensional </h4>
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card"><img alt="" class="img-fluid card-img-top" src="./images/items/4.jpg">
+                    <div class="card"><img alt="" class="img-fluid card-img-top" src="img/items/4.jpg">
                         <div class="card-body">
                             <div class="notable-drops-content-img"></div>
                             <h4 class="card-title">Extra Dimensional</h4>
@@ -93,108 +94,108 @@
     </div>
 
 
-    <div class="top-collection section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8">
-                    <div class="section-title text-center d-flex justify-content-between mb-3">
-                        <h2>Trending Items</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card items">
-                        <div class="card-body">
-                            <a href="./item.html">
-                                <div class="items-img position-relative">
-                                    <img alt="" class="img-fluid rounded mb-3" src="./images/items/5.jpg">
-                                </div>
-                                <h4 class="card-title">Liguid Wave</h4>
-                            </a>
-                            <p></p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-start">
-                                    <p class="mb-2">Auction</p>
-                                    <h5 class="text-muted">3h 1m 50s</h5>
-                                </div>
+<!--    <div class="top-collection section-padding">-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-xl-8">-->
+<!--                    <div class="section-title text-center d-flex justify-content-between mb-3">-->
+<!--                        <h2>Trending Items</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--                    <div class="card items">-->
+<!--                        <div class="card-body">-->
+<!--                            <a href="./item.html">-->
+<!--                                <div class="items-img position-relative">-->
+<!--                                    <img alt="" class="img-fluid rounded mb-3" src="img/items/5.jpg">-->
+<!--                                </div>-->
+<!--                                <h4 class="card-title">Liguid Wave</h4>-->
+<!--                            </a>-->
+<!--                            <p></p>-->
+<!--                            <div class="d-flex justify-content-between">-->
+<!--                                <div class="text-start">-->
+<!--                                    <p class="mb-2">Auction</p>-->
+<!--                                    <h5 class="text-muted">3h 1m 50s</h5>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--                    <div class="card items">-->
+<!--                        <div class="card-body">-->
+<!--                            <a href="./item.html">-->
+<!--                                <div class="items-img position-relative">-->
+<!--                                    <img alt="" class="img-fluid rounded mb-3" src="img/items/5.jpg">-->
+<!--                                </div>-->
+<!--                                <h4 class="card-title">Liguid Wave</h4>-->
+<!--                            </a>-->
+<!--                            <p></p>-->
+<!--                            <div class="d-flex justify-content-between">-->
+<!--                                <div class="text-start">-->
+<!--                                    <p class="mb-2">Auction</p>-->
+<!--                                    <h5 class="text-muted">3h 1m 50s</h5>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--                    <div class="card items">-->
+<!--                        <div class="card-body">-->
+<!--                            <a href="./item.html">-->
+<!--                                <div class="items-img position-relative">-->
+<!--                                    <img alt="" class="img-fluid rounded mb-3" src="img/items/5.jpg">-->
+<!--                                </div>-->
+<!--                                <h4 class="card-title">Liguid Wave</h4>-->
+<!--                            </a>-->
+<!--                            <p></p>-->
+<!--                            <div class="d-flex justify-content-between">-->
+<!--                                <div class="text-start">-->
+<!--                                    <p class="mb-2">Auction</p>-->
+<!--                                    <h5 class="text-muted">3h 1m 50s</h5>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-3 col-lg-6 col-md-6">-->
+<!--                    <div class="card items">-->
+<!--                        <div class="card-body">-->
+<!--                            <a href="./item.html">-->
+<!--                                <div class="items-img position-relative">-->
+<!--                                    <img alt="" class="img-fluid rounded mb-3" src="img/items/5.jpg">-->
+<!--                                </div>-->
+<!--                                <h4 class="card-title">Liguid Wave</h4>-->
+<!--                            </a>-->
+<!--                            <p></p>-->
+<!--                            <div class="d-flex justify-content-between">-->
+<!--                                <div class="text-start">-->
+<!--                                    <p class="mb-2">Auction</p>-->
+<!--                                    <h5 class="text-muted">3h 1m 50s</h5>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card items">
-                        <div class="card-body">
-                            <a href="./item.html">
-                                <div class="items-img position-relative">
-                                    <img alt="" class="img-fluid rounded mb-3" src="./images/items/5.jpg">
-                                </div>
-                                <h4 class="card-title">Liguid Wave</h4>
-                            </a>
-                            <p></p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-start">
-                                    <p class="mb-2">Auction</p>
-                                    <h5 class="text-muted">3h 1m 50s</h5>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card items">
-                        <div class="card-body">
-                            <a href="./item.html">
-                                <div class="items-img position-relative">
-                                    <img alt="" class="img-fluid rounded mb-3" src="./images/items/5.jpg">
-                                </div>
-                                <h4 class="card-title">Liguid Wave</h4>
-                            </a>
-                            <p></p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-start">
-                                    <p class="mb-2">Auction</p>
-                                    <h5 class="text-muted">3h 1m 50s</h5>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card items">
-                        <div class="card-body">
-                            <a href="./item.html">
-                                <div class="items-img position-relative">
-                                    <img alt="" class="img-fluid rounded mb-3" src="./images/items/5.jpg">
-                                </div>
-                                <h4 class="card-title">Liguid Wave</h4>
-                            </a>
-                            <p></p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-start">
-                                    <p class="mb-2">Auction</p>
-                                    <h5 class="text-muted">3h 1m 50s</h5>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="notable-drops section-padding bg-light triangle-top-light triangle-bottom-light" id="NFT-DROPS">
+    <div class="notable-drops section-padding" id="NFT-DROPS">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section-title text-center">
-                        <h2>Create and sell your NFTs</h2>
-                        <p>Here are a few reasons why you should choose Neftify</p>
+                        <h2>Upload your drops and projects</h2>
+                        <p>Here are a few reasons why you should choose NFTDropCalendar</p>
                     </div>
                 </div>
             </div>

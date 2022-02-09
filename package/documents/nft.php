@@ -5,9 +5,9 @@ require 'nftGetInfo.php';
 $seoTitle = $project['name'] . ' - NFTDropCalender.info';
 $seoDescription = $project['description'];
 $page = 'explore';
-$titleOg = $project['name'] . ' - NFTDropCalender.info';
+$titleOg = $project['name'] . ' - NFTDropCalendar.info';
 $beschrijving = $project['description'];
-//$img = 'https://nftgenie.pro/'.$project['thumbnail'];
+$img = 'http://localhost/NFT-Calander/package/documents/' . $project['thumbnail'];
 require 'include/header.php';
 
 ?>
@@ -18,10 +18,11 @@ require 'include/header.php';
                 <div class="top-bid">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6"><img alt="..." class="img-fluid rounded"
-                                                       src="./images/items/11.jpg"></div>
                             <div class="col-md-6">
-                                <h3 class="mb-3">Brighten LQ</h3>
+                                <img alt="..." class="img-fluid rounded"
+                                     src=""<?php echo $project['thumbnail']; ?>"></div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3"><?php echo $titleOg ?></h3>
                                 <hr>
                                 <ul class="list-unstyled">
                                     <li class="price d-flex justify-content-between">
@@ -85,15 +86,13 @@ require 'include/header.php';
                                 <a class="d-block btn btn-bordered-white mt-4" target="_blank"
                                    href="https://twitter.com/<?php echo $project['twitterName']; ?>" data-dnt="true"
                                    data-show-count="false" style="color: gray">
-                                    <img src='images/extern_logo/twitter_logo.png' style='width:25px;'>
+                                    <img src='img/extern_logo/twitter_logo.png' style='width:25px;'>
                                     Follow <?php echo $project['twitterName']; ?></a>
                                 <a class="d-block btn btn-bordered mt-4" target="_blank"
                                    href="<?php echo $project['discordLink']; ?>" data-dnt="true"
                                    data-show-count="false" style="color: gray">
-                                    <img src='images/extern_logo/discord_logo.png' style='width:25px;'> Discord
+                                    <img src='img/extern_logo/discord_logo.png' style='width:25px;'> Discord
                                     server</a>
-
-
                             </div>
                         </div>
                     </div>

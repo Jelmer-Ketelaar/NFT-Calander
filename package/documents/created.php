@@ -11,7 +11,7 @@
 
 
     <!-- Favicon icon -->
-    <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="img/favicon.png" rel="icon" sizes="16x16" type="image/png">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -50,9 +50,9 @@
                                 <div class="card-body">
                                     <div class="items-img position-relative">
                                         <img alt="" class="img-fluid rounded mb-3"
-                                                src="./images/items/1.jpg"><img
+                                                src="img/items/1.jpg"><img
                                                 alt=""
-                                                class="creator" src="./images/avatar/1.jpg" width="50"></div>
+                                                class="creator" src="img/avatar/1.jpg" width="50"></div>
                                     <a href="./item.html">
                                         <h4 class="card-title">Liguid Wave</h4>
                                     </a>
@@ -64,9 +64,9 @@
                                 <div class="card-body">
                                     <div class="items-img position-relative"><img alt=""
                                                                                   class="img-fluid rounded mb-3"
-                                                                                  src="./images/items/2.jpg"><img
+                                                                                  src="img/items/2.jpg"><img
                                                 alt=""
-                                                class="creator" src="./images/avatar/2.jpg" width="50"></div>
+                                                class="creator" src="img/avatar/2.jpg" width="50"></div>
                                     <a href="./item.html">
                                         <h4 class="card-title">Liguid Wave</h4>
                                     </a>
@@ -78,9 +78,9 @@
                                 <div class="card-body">
                                     <div class="items-img position-relative"><img alt=""
                                                                                   class="img-fluid rounded mb-3"
-                                                                                  src="./images/items/3.jpg"><img
+                                                                                  src="img/items/3.jpg"><img
                                                 alt=""
-                                                class="creator" src="./images/avatar/3.jpg" width="50"></div>
+                                                class="creator" src="img/avatar/3.jpg" width="50"></div>
                                     <a href="./item.html">
                                         <h4 class="card-title">Liguid Wave</h4>
                                     </a>
@@ -92,9 +92,9 @@
                                 <div class="card-body">
                                     <div class="items-img position-relative"><img alt=""
                                                                                   class="img-fluid rounded mb-3"
-                                                                                  src="./images/items/4.jpg"><img
+                                                                                  src="img/items/4.jpg"><img
                                                 alt=""
-                                                class="creator" src="./images/avatar/4.jpg" width="50"></div>
+                                                class="creator" src="img/avatar/4.jpg" width="50"></div>
                                     <a href="./item.html">
                                         <h4 class="card-title">Liguid Wave</h4>
                                     </a>
@@ -113,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
-                    <div class="bottom-logo"><img alt="" class="pb-3" src="./images/logoh.png">
+                    <div class="bottom-logo"><img alt="" class="pb-3" src="img/logoh.png">
                         <p>Neftify is a unique and beautiful collection of UI elements that are all flexible and
                             modular. A
                             complete and customizable solution to building the website of your dreams.</p>

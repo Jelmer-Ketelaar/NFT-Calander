@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="@@dashboard">
+<body class="@@dashboard dark-theme">
 
 <!--<div id="preloader"><i>.</i><i>.</i><i>.</i></div>-->
 

@@ -15,11 +15,10 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="@@dashboard">
 
 <div class="front" id="main-wrapper">
 
-    <?php include('header.php') ?>
+    <?php include('include/header.php') ?>
 
     <div class="page-title">
         <div class="container">

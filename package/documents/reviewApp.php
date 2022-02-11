@@ -24,7 +24,7 @@ if (isset($_GET['ww']) && $_GET['ww'] === 'Test') {
     <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="@@dashboard dark-theme">
 <!-- ***** Activity Area Start ***** -->
 <section class="activity-area load-more">
     <div class="container">

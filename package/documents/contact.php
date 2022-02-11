@@ -2,7 +2,6 @@
 <html lang="en">
 <link href="./icons/favicon.ico" rel="icon" sizes="16x16" type="image/png">
 
-<body>
 <?php  include "include/header.php"?>
 <!--<br>-->
 <div class="cont">
